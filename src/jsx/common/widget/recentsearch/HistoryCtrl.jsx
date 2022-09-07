@@ -23,7 +23,7 @@ function HistoryCtrl() {
             }
         })
         .then(Response=>{
-            console.log(Response)
+            
             alert("삭제되었습니다.")
         })
     } 

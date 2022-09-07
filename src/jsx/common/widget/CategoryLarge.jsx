@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function CategoryLarge({data}) {
-  console.log(data.lv1imgpath);
+
   return (
     <Link to="" className="clickable">
       <span

@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 import Server from '../../server/server';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
-import LoginContext from '../../context/login.context';
+import LoginContext from "../../context/login.context";
 
 function RecentSearch() {
     const auth = useContext(LoginContext);
@@ -47,7 +47,7 @@ function RecentSearch() {
                 setRecentPdt(Response.data)
             })
         }
-    }, [auth, deleteMsg])
+    }, [auth,deleteMsg])
 
     
     const deleteRecent = () => {
@@ -57,13 +57,13 @@ function RecentSearch() {
                 }
             })
             .then(Response => {
-                console.log(Response)
+              
                 swal();
                 setRecentList(!recentList)
                 setDeleteMsg(Response)
             })
     }
-  console.log(recentPdt)
+  
     return ( 
         <div id="m_content">
             <div className="cmhistory_wrap" id="_cmhistory_wrap">

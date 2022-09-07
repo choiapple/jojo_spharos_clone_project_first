@@ -23,7 +23,7 @@ function CategoryMain() {
     axios.get(`${Server.baseUrl}api/category/Lv1/findAll`)
     .then(Response => {
       setCategoryDatas(Response.data)
-      console.log(Response.data)
+     
     })
   },[])
   return (

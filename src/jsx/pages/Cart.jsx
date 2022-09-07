@@ -24,7 +24,7 @@ function Cart() {
     const [userData, setUserData] = useState();
     const [userDelivery, setUserDelivery] = useState();
     useEffect(()=>{
-        if(auth.auth === true){
+        if(auth.token){
             const token = auth.token;
             axios.all([
             axios.get(`${Server.baseUrl}api/cart/get`,{headers:{"Authorization":token}}),
@@ -51,8 +51,8 @@ function Cart() {
             }))
         }
        
-    },[toggle]);
-    console.log(userData);
+    },[auth,toggle]);
+  
     return (
         <>
 

@@ -52,12 +52,15 @@ function HideSearch() {
   const [toggle, setToggle]= useState(false);
   useEffect(()=>{
     const token = auth.token;
-    axios.get(`${Server.baseUrl}api/recentsearches/get`,{
+    if(auth.token){
+      axios.get(`${Server.baseUrl}api/recentsearches/get`,{
         headers:{"Authorization":token}
     }).then((Response)=>{
         setRecentSearch(Response.data);
     })
-  },[location, search, toggle])
+    }
+    
+  },[location, search, toggle, auth])
   const deleteSearch = (keyword) =>{
     const token = auth.token;
     axios.delete(`${Server.baseUrl}api/recentsearches/delete/${keyword}`,{

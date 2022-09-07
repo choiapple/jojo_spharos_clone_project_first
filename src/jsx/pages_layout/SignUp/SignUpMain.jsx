@@ -19,10 +19,7 @@ function SignUpMain({inputData}) {
          
            // 주소 선택 이벤트
            selectAddress: (data) => {
-             console.log(`
-                     주소: ${data.address},
-                     우편번호: ${data.zonecode}
-                 `)
+             
              setAddress(`${data.address}`)   
              setZonecode(`${data.zonecode}`)   
              setOpenPostcode(false); 
@@ -75,12 +72,14 @@ function SignUpMain({inputData}) {
 
           const onChangeUserId = (e) => {
             const userIdRegex = /^[A-Za-z0-9]{3,}$/;
-            if ((!e.target.value || (userIdRegex.test(e.target.value)))) 
-              {
-                setUserIdError(false);
-              }else setUserIdError(true)
-             setUserId(e.target.value);
-            
+            if ((!e.target.value || (userIdRegex.test(e.target.value)))){
+              setUserIdError(false);
+            }else{
+              setUserIdError(true);
+            }
+            setUserId(e.target.value);
+              
+
             // 안에 값이 없거나 정규식이 맞으면 에러flase = 즉 에러안뜸
             // 그 외의 경우 에러 true = 즉 에러뜸
           
@@ -137,16 +136,34 @@ function SignUpMain({inputData}) {
       
       
           const validation = () => {
-            console.log(userIdError)
-       
-            if (!userId) setUserIdError(true);
-            if (!userIdError) 
-            if (!password) setPasswordError(true);
-            if (!confirmPassword) setConfirmPasswordError(true);
-            if (!userName) setUserNameError(true);
-            if (!userAddDetail) setUserAddDetailError(true);
-            if (!phoneNum) setPhoneNumError(true);
-            if (!email) setEmailError(true);
+         
+            if (!userId) {
+              //!userId => 값이있다
+              //값이없으면 false => 국룰.
+              setUserIdError(true);
+            }
+            if (!userIdError) {
+
+            }
+            if (!password){
+              setPasswordError(true);
+            } 
+            if (!confirmPassword){
+              setConfirmPasswordError(true);
+            }
+            if (!userName){
+              setUserNameError(true);
+            }
+            if (!userAddDetail){
+              setUserAddDetailError(true);
+            } 
+            if (!phoneNum){
+              setPhoneNumError(true);
+            } 
+            if (!email) {
+              setEmailError(true);
+            }
+            //값이 없을때 값을 넣게하는 검사
          
             if ( !userIdError && userId && password && confirmPassword && userName && email && userAddDetail && phoneNum && zonecode && idCheck === '가입 가능' ){
               return true;
@@ -176,7 +193,8 @@ function SignUpMain({inputData}) {
           const onSubmit = (e) => {
             e.preventDefault();
 
-            if (validation()) {
+            if (validation() === true) {
+          //if (validation()) 와 같은말임   
               axios.post(`${Server.baseUrl}api/user/signup`, {
                   "userId": userId,
                   "password": password,
@@ -190,7 +208,7 @@ function SignUpMain({inputData}) {
 
                 })
                 .then(res => {
-                  console.log(res);
+                 
                   welcome();
                   
                 })

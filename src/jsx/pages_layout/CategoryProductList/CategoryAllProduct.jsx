@@ -11,7 +11,7 @@ function CategoryAllProduct({ product, pageData, setPageData}) {
       setPageData(pre => pre+1)
     }
   },[inView])
-  console.log(product)
+ 
   return (
     <div
       id="_infinite_grid"

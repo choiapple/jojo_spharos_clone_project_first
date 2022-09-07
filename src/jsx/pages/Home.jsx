@@ -28,7 +28,7 @@ function Home() {
 
     const auth = useContext(loginContext);
     useEffect(()=>{
-        console.log(auth)
+      
     },[auth])
     return ( 
             <div id="m_container" className='mcom_container' data-iframe-height>

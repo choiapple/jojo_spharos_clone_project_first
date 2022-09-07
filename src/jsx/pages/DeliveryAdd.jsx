@@ -31,17 +31,14 @@ function DeliveryAdd() {
 
     // 주소 선택 이벤트
     selectAddress: (data) => {
-      console.log(`
-            주소: ${data.address},
-            우편번호: ${data.zonecode}
-        `);
+     
       setAddress(`${data.address}`);
       setZonecode(`${data.zonecode}`);
       setOpenPostcode(false);
     },
   };
   const handleInput = (e) => {
-    // console.log(e.target)
+   
     setInputData({
       ...inputData,
       [e.target.name]: e.target.value,
@@ -49,7 +46,6 @@ function DeliveryAdd() {
   };
   const handlePush =() =>{
     const token = auth.token;
-    console.log(token);
     axios.post(`${Server.baseUrl}api/deliveryaddress/add`,{
       address:address,
       whetherDefaultAddress:false,

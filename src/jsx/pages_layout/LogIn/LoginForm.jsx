@@ -39,7 +39,7 @@ function LoginForm() {
   }
 
   const handleDelete = (e) => {
-    // console.log(e.target.id)
+  
     setinputData({
       ...inputData,
       [e.target.id]: "",
@@ -47,7 +47,7 @@ function LoginForm() {
   };
 
   const handleInput = (e) => {
-    // console.log(e.target)
+ 
 
     setinputData({
       ...inputData,
@@ -55,7 +55,7 @@ function LoginForm() {
     });
   };
 
-  console.log(inputData.id);
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (inputData.id === "") {
@@ -71,7 +71,7 @@ function LoginForm() {
         })
         .then((Response) => {
           welcome();
-          console.log(Response);
+        
           if (Response.data) {
             auth.onLogIn(Response.data);
           }

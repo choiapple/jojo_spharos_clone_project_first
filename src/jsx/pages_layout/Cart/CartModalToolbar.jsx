@@ -23,7 +23,7 @@ function CartModalToolbar({userData, toggle, cartTotalPrice}) {
       totalFee = totalFee + data.fee
     })
     setTf(totalFee);
-    console.log(toggle); 
+ 
   },[userData,toggle])
   
   

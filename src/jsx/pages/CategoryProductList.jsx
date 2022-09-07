@@ -31,7 +31,7 @@ function CategoryProductList() {
     .then((Response)=>{
       setCategoryData(Response.data);
       setProduct(pre=>[...pre, Response.data.productList])
-      console.log(product)
+
     })
   },[url])
   

@@ -54,7 +54,6 @@ function MyPage() {
             }
     ))},[auth])
 
-    console.log(auth)
     return (
 <>
     {

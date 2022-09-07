@@ -62,22 +62,24 @@ function Product() {
   const token = localStorage.getItem('token')
   const[url, setUrl] = useState();
   useEffect(()=>{
-
-    axios.all([
-      axios.get(`${Server.baseUrl}api/product/detail/${pa.id}`,{headers: {"Authorization": token}}),
-      axios.get(`${Server.baseUrl}api/productoptionbyproduct/${pa.id}`,{headers: {"Authorization": token}})
-    ]) 
-    .then(axios.spread((Response,Response2)=>{
-
-      setPdtDetail(Response.data)
-      setPdtOption(Response2.data)
-      setLoading(!false)
-    }))
+    if(auth.token){
+      axios.all([
+        axios.get(`${Server.baseUrl}api/product/detail/${pa.id}`,{headers: {"Authorization": token}}),
+        axios.get(`${Server.baseUrl}api/productoptionbyproduct/${pa.id}`,{headers: {"Authorization": token}})
+      ]) 
+      .then(axios.spread((Response,Response2)=>{
+  
+        setPdtDetail(Response.data)
+        setPdtOption(Response2.data)
+        setLoading(!false)
+      }))
+      
+      .catch(Error => {
+     
+      })
+    }
     
-    .catch(Error => {
-      console.log(Error)
-    })
-  },[url])
+  },[auth,url])
 
  
  
@@ -208,7 +210,7 @@ function Product() {
 
 
   const [cartC,setCartC] = useRecoilState(cartCountState);
-  console.log(selectedData)
+
   /* 장바구니 추가 */
 
   const addCart = () => {
@@ -221,7 +223,7 @@ function Product() {
             "Authorization": token
           }
         }).then(response => {
-          console.log(response.data)
+         
           alert("장바구니에 추가되었습니다")
           setCartC({...cartC,cartC:!cartC.cartC})
         })
@@ -238,7 +240,7 @@ function Product() {
     
   }
 
-  console.log(pdtOption)
+ 
   return (
     <>
 

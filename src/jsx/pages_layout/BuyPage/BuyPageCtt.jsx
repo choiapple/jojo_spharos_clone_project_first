@@ -12,7 +12,7 @@ function BuyPageCtt({pdtDetail,selectedData}) {
     const auth = useContext(loginContext);
     const [userData, setUserData] = useState();
     const [userDelivery, setUserDelivery] = useState();
-   console.log(selectedData)
+  
 
   /* 최종 결제 금액 */
   let initialTotalPrice = 0;
@@ -35,7 +35,7 @@ function BuyPageCtt({pdtDetail,selectedData}) {
   
   let fullDate = `${year}-0${month}-0${date}`
   let fullDate7 = `${year}-0${month}-0${date + 7}`
-  console.log(fullDate)
+
 
 
 
@@ -51,7 +51,7 @@ function BuyPageCtt({pdtDetail,selectedData}) {
             .then(axios.spread((Response1, Response2) =>{
             
                 setUserData(Response1.data);
-                console.log(Response2.data)
+              
                 let tmp = 0;
                 Response2.data.forEach((data)=>{
                     if(data.whetherOnlyThisTime === true){
@@ -129,7 +129,7 @@ function BuyPageCtt({pdtDetail,selectedData}) {
                   
             )
             .then((Response) =>{
-                console.log(Response.data)
+                
                 goodOrder();
                 navigate('/buycomplete')
             }).catch((err)=>{

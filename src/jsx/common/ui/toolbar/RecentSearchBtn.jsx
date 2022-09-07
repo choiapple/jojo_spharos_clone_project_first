@@ -1,22 +1,27 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import LoginContext from '../../../../context/login.context';
 import Server from '../../../../server/server';
 
 function RecentSearchBtn() {
-
+    const auth = useContext(LoginContext);
     const [recentPdt, setRecentPdt] = useState([]);
     const token = localStorage.getItem('token')
     useEffect(()=>{
-        axios.get(`${Server.baseUrl}api/recently/list`,{
-            headers:{
-                "Authorization":token
-            }
-        })
-        .then(Response=>{
-            setRecentPdt(Response.data)
-        })
-    },[]) 
+        if(auth.token){
+            axios.get(`${Server.baseUrl}api/recently/list`,{
+                headers:{
+                    "Authorization":token
+                }
+            })
+            .then(Response=>{
+                setRecentPdt(Response.data)
+            })
+        }
+        
+    },[auth]) 
     const a = recentPdt.length
     return ( 
         <>

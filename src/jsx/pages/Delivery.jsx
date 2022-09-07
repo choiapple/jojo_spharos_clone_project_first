@@ -14,7 +14,7 @@ function Delivery() {
     const token = localStorage.getItem('token');
     axios.get(`${Server.baseUrl}api/deliveryaddress/get`, {headers:{"Authorization":token}})
     .then((Response) => {
-      console.log(Response.data);
+    
       setDeliveryData(Response.data);
       let tmp = 0;
       Response.data.forEach((data)=>{
@@ -57,7 +57,7 @@ function Delivery() {
       }else{
         return false;
       }});
-    console.log(tmp2);
+ 
     setWhetherD(tmp2);
   }
   

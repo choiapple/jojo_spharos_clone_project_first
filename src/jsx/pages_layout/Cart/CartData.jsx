@@ -5,6 +5,7 @@ import { useContext } from "react";
 import LoginContext from "../../../context/login.context";
 import CartModalToolbar from "./CartModalToolbar";
 import Server from "../../../server/server";
+import Swal from "sweetalert2";
 
 function CartData({ userData, setUserData, toggle, setToggle}) {
   const auth = useContext(LoginContext);
@@ -21,14 +22,34 @@ function CartData({ userData, setUserData, toggle, setToggle}) {
     initialTotalNewPrice = initialTotalNewPrice + data.newPrice*data.cartCount;
   })
 
-  console.log(userData)
+  
   let initialCount = userData.map((data) => data.cartCount);
   const [cnt, setCnt] = useState(initialCount);
   const [totalPrice, setTotalPrice] = useState(initialTotalPrice);
   const [totalFee, setTotalFee] = useState(initialTotalFee);
   const [totalNewPrice, setTotalNewPrice] = useState(initialTotalNewPrice);
   
-  
+
+  const swal = () => {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
+    })
+  }
+
  
 
   const handleDec =(idx,id) =>{
@@ -82,7 +103,10 @@ function CartData({ userData, setUserData, toggle, setToggle}) {
       setUserData(dD);
       alert("삭제되었습니다.");
       axios.delete(`${Server.baseUrl}api/cart/delete/${i}`)
-      setToggle(!toggle);
+      .then(Response =>
+        setToggle(!toggle)
+      )
+      
     }else{
       return null;
     }
@@ -99,7 +123,7 @@ function CartData({ userData, setUserData, toggle, setToggle}) {
 
   const cartTotalPrice = totalNewPrice+totalFee;
 
-  console.log(cartTotalPrice)
+ 
   return (
     <>
       {userData.length !== 0?

@@ -50,7 +50,7 @@ function SubSignUp2() {
   };
 
   const handleInput = (e) => {
-    // console.log(e.target)
+  
     setInputData({
       ...inputData,
       [e.target.name]: e.target.value,
@@ -91,7 +91,7 @@ function SubSignUp2() {
      else if (inputData.name && inputData.birth && inputData.gender && inputData.phone) 
     { 
 
-      console.log(inputData);
+   
       setSignUp(!signUp);
     }
   };

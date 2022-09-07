@@ -19,14 +19,13 @@ function BuyComplete() {
                 }
             })
             .then(Response =>{
-                console.log(Response.data)
-                console.log(Response.data.length)
+              
                 setOrderDate(Response.data)
                 setOrderLength(Response.data.length - 1)
             })
     },[]);
     
-    console.log(orderData)
+   
     return ( 
         <>
         {orderData && 

@@ -10,7 +10,6 @@ function PdtCttGrid() {
     const [url, setUrl] = useState() 
     const location = useLocation();
     const query = queryString.parse(location.search);
-    console.log(query.keyword)
     const [productList, setProductList] = useState();
     const token = localStorage.getItem('token')
     const [keyword, setKeyword] = useState()
@@ -30,7 +29,7 @@ function PdtCttGrid() {
         })  
         .then(Response =>{
             setProductList(Response.data)
-            console.log(Response.data)
+          
         })
     },[url])
 

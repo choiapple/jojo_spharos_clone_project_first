@@ -3,7 +3,7 @@ import React from 'react';
 function UserOrder({myOrder}) {
     
 
-    console.log(myOrder)
+   
     return ( 
         <>
        {myOrder &&

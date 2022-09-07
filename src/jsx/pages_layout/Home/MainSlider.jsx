@@ -30,7 +30,7 @@ function MainSlider(props) {
       });
     const handleAutoBtn= () =>{
         setSettings({...settings, autoplay : !settings.autoplay})
-        console.log(settings.autoplay)
+  
     }
     const [idx, setIdx] = useState(0);
     const handleChange = (i) =>{
@@ -79,9 +79,9 @@ function MainSlider(props) {
                                                 data-advertacctid="1005578087" data-advertbidid="1002120689"
                                                 data-advertbilngtypecd="10" data-advertkindcd="50">
                                                 <div className="cmitem_tt_adinfo ssg-tooltip-wrap">
-                                                    <a href="#" className="cmitem_btn_tt_adinfo ssg-tooltip"><span
+                                                    <span className="cmitem_btn_tt_adinfo ssg-tooltip"><span
                                                             className="blind">광고
-                                                            안내 툴팁</span></a>
+                                                            안내 툴팁</span></span>
                                                     <div className="cmitem_tt_adinfo_layer ssg-tooltip-layer">검색어와 관련된
                                                         상품으로
                                                         입찰가순으로 전시됩니다.<button type="button"

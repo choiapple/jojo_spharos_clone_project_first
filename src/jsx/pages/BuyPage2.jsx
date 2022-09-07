@@ -16,7 +16,7 @@ function BuyPage2({cartTotalPrice, userData }) {
     const [userDelivery, setUserDelivery] = useState();
     const [pdtDetail, setPdtDetail] = useState();
 
-    console.log(cartTotalPrice)
+   
     /* 데이터받기 */
     useEffect(()=>{
         if(auth.auth === true){
@@ -126,8 +126,7 @@ function BuyPage2({cartTotalPrice, userData }) {
     
     },[pdtDetail])
 
-    console.log(pdtDetail)
-    console.log(price)
+  
 
     /* 결제시 데이터 보내기 */
     const handleOrder = () =>{
@@ -155,13 +154,13 @@ function BuyPage2({cartTotalPrice, userData }) {
                   
             )
             .then((Response) =>{
-                console.log(Response.data)
+               
                 goodOrder();
                 navigate('/BuyComplete')
             })
             .catch((error)=>{
                 alert("결제가 이루어지지 않았습니다.")
-                console.log(error)
+               
             })  
         }
     }

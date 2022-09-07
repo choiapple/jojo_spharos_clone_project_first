@@ -6,7 +6,7 @@ function PdtListTop() {
         
     const location = useLocation();
     const query = queryString.parse(location.search);
-    console.log(query.keyword)
+  
 
     return ( 
         <div className="mcom_tit_renew react-area">
