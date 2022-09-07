@@ -1,0 +1,115 @@
+
+[{
+        "id": 1,
+        "url": "https://m-emart.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|이마트몰",
+        "iClassName": "em",
+        "name": "이마트몰",
+        "ad": false
+    },
+    {
+        "id": 2,
+        "url": "https://m-shinsegaemall.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|신세계몰",
+        "iClassName": "sm",
+        "name": "신세계몰",
+        "ad": false
+    }, {
+        "id": 3,
+        "url": "https://m-emart.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|이마트몰",
+        "iClassName": "tr",
+        "name": "트레이더스",
+        "ad": false
+    },
+    {
+        "id": 4,
+        "url": "https://m-shinsegaemall.ssg.com/dept/main.ssg",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|신세계백화점",
+        "iClassName": "sd",
+        "name": "신세계백화점",
+        "ad": false
+    }, {
+        "id": 5,
+        "url": "https://m-earlymorning.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|새벽배송",
+        "iClassName": "mnmorning",
+        "name": "새벽배송",
+        "ad": false
+    },
+    {
+        "id": 6,
+        "url": "https://m-casamia.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|까사미아",
+        "iClassName": "mncasamia",
+        "name": "까사미아",
+        "ad": false
+    },
+    {
+        "id": 7,
+        "url": "https://m-starbucks.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|STARBUCKS",
+        "iClassName": "mnstarbucks",
+        "name": "STARBUCKS",
+        "ad": false
+
+    },
+    {
+        "id": 8,
+        "url": "https://m-chicor.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|CHICOR",
+        "iClassName": "mnchicor",
+        "name": "CHICOR",
+        "ad": false
+    },
+    {
+        "id": 9,
+        "url": "https://m-tv.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|신세계TV쇼핑",
+        "iClassName": "tv",
+        "name": "신세계TV쇼핑",
+        "ad": false
+    },
+    {
+        "id": 10,
+        "url": "https://m-triip.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|여행",
+        "iClassName": "mntrip",
+        "name": "여행",
+        "ad": false
+    },
+    {
+        "id": 11,
+        "url": "https://m-sivillage.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|S.I.VILLAGE",
+        "iClassName": "si",
+        "name": "S.I.VILLAGE",
+        "ad": false
+    },
+    {
+        "id": 12,
+        "url": "https://m-starfield.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|스타필드",
+        "iClassName": "sf",
+        "name": "스타필드",
+        "ad": false
+    },
+    {
+        "id": 13,
+        "url": "https://m-premiumoutlets.ssg.com",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|프리미엄아울렛",
+        "iClassName": "outlet",
+        "name": "프리미엄아울렛",
+        "ad": false
+    },
+    {
+        "id": 14,
+        "url": "https://m-shinsegaemall.ssg.com/specialStore/lg01/main.ssg?v=20220717",
+        "tarea": "웹공통_N|몰이동 레이어|몰이동_클릭|LG전자",
+        "iClassName": "sm",
+        "name": "LG전자",
+        "ad": true
+
+    }
+
+]

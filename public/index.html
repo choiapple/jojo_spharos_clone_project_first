@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="stylesheet" type="text/css" href="../src/css/common/control.css" />
+  <link rel="stylesheet" type="text/css" href="https://sui.ssgcdn.com/ui/m_ssg/css/mnodr.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="https://sui.ssgcdn.com/ui/m_ssg/css/mnodr.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="../src/css/common/control.css">
+  <link rel="stylesheet" type="text/css" href="https://sui.ssgcdn.com/ui/m_ssg/css/mnodr.css?v=20220726">
+  <link rel="stylesheet" type="text/css" href="https://sui.ssgcdn.com/ui/m_ssg/css/mnodr.css?v=20220726">
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_layout.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_global.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_component.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/ssg_component.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/common.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/swiper.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/m_sm.css?v=20220726" />
+  <link rel="stylesheet" href="https://sui.ssgcdn.com/ui/m_ssg/css/mcom_component.css?v=20220802">
+
+
+
+
+
+
+  <!-- 이하 -->
+  <!-- <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_layout.css?v=20220802" /> -->
+  <!-- 이거있으면 푸터깨짐 -->
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_com.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_ssg.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_layout.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_global.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_ssg.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/ssg_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/cmunit.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_hotdeal.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_layout.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_global.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_component.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/ssg_component.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/common.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/swiper.css?v=20220726" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/m_sm.css?v=20220726" />
+  <link rel="apple-touch-icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png" />
+  <link rel="apple-touch-icon-precomposed" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+    href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_144.png" />
+  <link rel="icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png" />
+  <link rel="shortcut icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png" />
+  <link rel="image_src" href="https://sui.ssgcdn.com/ui/common/img/sns/sm.png" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_layout.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_global.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/ssg_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/common.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/swiper.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/m_sm.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/cmunit.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_hotdeal.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_page_lnb.css?v=20220802" />
+  <link rel="apple-touch-icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png" />
+  <link rel="apple-touch-icon-precomposed" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+    href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_144.png" />
+  <link rel="icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png" />
+  <link rel="shortcut icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png" />
+  <link rel="image_src" href="https://sui.ssgcdn.com/ui/common/img/sns/sm.png" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_layout.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_global.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/ssg_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/common.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/swiper.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/m_sm.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/cmunit.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_hotdeal.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mndtl_v2.css?v=20220802" />
+  <link rel="preload" as="image" href="https://sitem.ssgcdn.com/66/75/14/item/1000310147566_i1_750.jpg" />
+  <link rel="canonical" href="https://www.ssg.com/item/itemView.ssg?itemId=1000310147566" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_layout.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_global.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/ssg_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/common.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/swiper.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/m_sm.css?v=20220802" />
+
+
+
+
+
+  <!-- 리스트 css -->
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_layout.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_global.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/ssg_component.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/common.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/swiper.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/m_sm.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/cmunit.css?v=20220802" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_hotdeal.css?v=20220802" />
+
+  <!-- 회원가입 css -->
+  <link rel="apple-touch-icon" href="//sui.ssgcdn.com/ui/common/img/ios_144x144.png" />
+  <link rel="apple-touch-icon-precomposed" href="//sui.ssgcdn.com/ui/common/img/ios_57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//sui.ssgcdn.com/ui/common/img/ios_72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//sui.ssgcdn.com/ui/common/img/ios_114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//sui.ssgcdn.com/ui/common/img/ios_144x144.png" />
+  <link rel="icon" href="//sui.ssgcdn.com/ui/common/img/android_144x144.png" />
+  <link rel="shortcut icon" href="//sui.ssgcdn.com/ui/common/img/android_144x144.png" />
+  <link rel="image_src" href="https://sui.ssgcdn.com/ui/common/img/sns/ssg.png" />
+  <!-- <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_layout.css?v=20220809" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_com.css?v=20220809" /> -->
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_ssg.css?v=20220809" />
+
+
+  <!--리뷰 css-->
+
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_layout.css?v=20220816" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_global.css?v=20220816" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_ssg.css?v=20220816" />
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mndtl_v2.css?v=20220816" />
+  <link rel="apple-touch-icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png" />
+  <link rel="apple-touch-icon-precomposed" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+    href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_144.png" />
+  <link rel="icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png" />
+  <link rel="shortcut icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png" />
+  <link rel="stylesheet" href="https://sui.ssgcdn.com/ui/m_ssg/css/mnodr.css?v=20220816" />
+  <link rel="stylesheet" href="https://sui.ssgcdn.com/ui/m_ssg/css/ssg_component.css?v=20220816" />
+  <!--배송지 관리-->
+
+  <link rel="apple-touch-icon" href="//sui.ssgcdn.com/ui/common/img/ios_144x144.png"/>
+  <link rel="apple-touch-icon-precomposed" href="//sui.ssgcdn.com/ui/common/img/ios_57x57.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//sui.ssgcdn.com/ui/common/img/ios_72x72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//sui.ssgcdn.com/ui/common/img/ios_114x114.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//sui.ssgcdn.com/ui/common/img/ios_144x144.png"/>
+  <link rel="icon" href="//sui.ssgcdn.com/ui/common/img/android_144x144.png"/>
+  <link rel="shortcut icon" href="//sui.ssgcdn.com/ui/common/img/android_144x144.png"/>
+  <link rel="image_src" href="https://sui.ssgcdn.com/ui/common/img/sns/ssg.png"/>
+  <!--배송지 추가-->
+
+  <link rel="apple-touch-icon" href="//sui.ssgcdn.com/ui/common/img/ios_144x144.png"/>
+  <link rel="apple-touch-icon-precomposed" href="//sui.ssgcdn.com/ui/common/img/ios_57x57.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//sui.ssgcdn.com/ui/common/img/ios_72x72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//sui.ssgcdn.com/ui/common/img/ios_114x114.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//sui.ssgcdn.com/ui/common/img/ios_144x144.png"/>
+  <link rel="icon" href="//sui.ssgcdn.com/ui/common/img/android_144x144.png"/>
+  <link rel="shortcut icon" href="//sui.ssgcdn.com/ui/common/img/android_144x144.png"/>
+  <link rel="image_src" href="https://sui.ssgcdn.com/ui/common/img/sns/ssg.png"/>
+  <!-- <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_layout.css?v=20220824"/> -->
+  <!-- <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_com.css?v=20220824"/> -->
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_ssg.css?v=20220824"/>
+
+  <!-- 최근본페이지 -->
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_page_history.css" />
+  <!--mypage-->
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_myssg.css?v=20220802" />
+
+  <!--카테고리 눌러서 나오는 상품 리스트-->
+       
+  <link rel="apple-touch-icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png"/>
+  <link rel="apple-touch-icon-precomposed" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon57.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_114.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_icon_144.png"/>
+  <link rel="icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png"/>
+  <link rel="shortcut icon" href="//sui.ssgcdn.com/ui/m_sm/img/favicon/ssgm_android72.png"/>
+  <link rel="image_src" href="https://sui.ssgcdn.com/ui/common/img/sns/sm.png"/>
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_layout.css?v=20220830"/>
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_global.css?v=20220830"/>
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/mcom_component.css?v=20220830"/>
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/ssg_component.css?v=20220830"/>
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/common.css?v=20220830"/>
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/swiper.css?v=20220830"/>
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_sm/css/m_sm.css?v=20220830"/>
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/cmunit.css?v=20220830"/>
+  <link rel="stylesheet" type="text/css" href="//sui.ssgcdn.com/ui/m_ssg/css/m_hotdeal.css?v=20220830"/>
+  <link rel="stylesheet" type="text/css" href="https://sui.ssgcdn.com/ui/m_ssg/css/m_category.css?v=20220830"/>
+  
+  
+  
+
+
+
+  <link rel="stylesheet" href="./css/style.css">
+  <title>SSG.COM</title>
+</head>
+
+<body>
+  <div id="root">
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

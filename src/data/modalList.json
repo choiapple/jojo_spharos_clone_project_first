@@ -1,0 +1,225 @@
+{
+    "options": [
+        {
+            "productOption1Contents": "OLIVE(UK)",
+            "option2": [
+                {
+                    "productOption2Contents": "12",
+                    "optionId": 4,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "14",
+                    "optionId": 5,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "16",
+                    "optionId": 6,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "20",
+                    "optionId": 7,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "22",
+                    "optionId": 8,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "18",
+                    "optionId": 9,
+                    "stock": 5000
+                }
+            ]
+        },
+        {
+            "productOption1Contents": "NAVY(UK)",
+            "option2": [
+                {
+                    "productOption2Contents": "16",
+                    "optionId": 10,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "20",
+                    "optionId": 11,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "18",
+                    "optionId": 12,
+                    "stock": 5000
+                }
+            ]
+        },
+        {
+            "productOption1Contents": "DOESKIN(UK)",
+            "option2": [
+                {
+                    "productOption2Contents": "12",
+                    "optionId": 13,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "14",
+                    "optionId": 14,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "16",
+                    "optionId": 15,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "20",
+                    "optionId": 16,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "22",
+                    "optionId": 17,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "18",
+                    "optionId": 18,
+                    "stock": 5000
+                }
+            ]
+        },
+        {
+            "productOption1Contents": "BLACK(UK)",
+            "option2": [
+                {
+                    "productOption2Contents": "12",
+                    "optionId": 19,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "14",
+                    "optionId": 20,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "16",
+                    "optionId": 21,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "20",
+                    "optionId": 22,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "22",
+                    "optionId": 23,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "18",
+                    "optionId": 24,
+                    "stock": 5000
+                }
+            ]
+        },
+        {
+            "productOption1Contents": "DARK RED(UK)",
+            "option2": [
+                {
+                    "productOption2Contents": "12",
+                    "optionId": 25,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "14",
+                    "optionId": 26,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "16",
+                    "optionId": 27,
+                    "stock": 5000
+                },
+                {
+                    "productOption2Contents": "18",
+                    "optionId": 28,
+                    "stock": 5000
+                }
+            ]
+        }
+    ],
+    "productOption2Name": "사이즈",
+    "productOption1Name": "색상"
+}
+
+
+
+{
+    "options": [
+        {
+            "productOption1Contents": "XS",
+            "option2": [
+                {
+                    "productOption2Contents": null,
+                    "optionId": 34,
+                    "stock": 5000
+                }
+            ]
+        },
+        {
+            "productOption1Contents": "S ",
+            "option2": [
+                {
+                    "productOption2Contents": null,
+                    "optionId": 35,
+                    "stock": 5000
+                }
+            ]
+        },
+        {
+            "productOption1Contents": "M ",
+            "option2": [
+                {
+                    "productOption2Contents": null,
+                    "optionId": 36,
+                    "stock": 5000
+                }
+            ]
+        },
+        {
+            "productOption1Contents": "L ",
+            "option2": [
+                {
+                    "productOption2Contents": null,
+                    "optionId": 37,
+                    "stock": 5000
+                }
+            ]
+        },
+        {
+            "productOption1Contents": "XL",
+            "option2": [
+                {
+                    "productOption2Contents": null,
+                    "optionId": 38,
+                    "stock": 5000
+                }
+            ]
+        },
+        {
+            "productOption1Contents": "XXL",
+            "option2": [
+                {
+                    "productOption2Contents": null,
+                    "optionId": 39,
+                    "stock": 5000
+                }
+            ]
+        }
+    ],
+    "productOption2Name": null,
+    "productOption1Name": "사이즈"
+}

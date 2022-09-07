@@ -1,0 +1,215 @@
+@import url(./common/default.css);
+@import url(./slick-theme.css);
+@import url(./slick.css);
+
+
+
+body{
+    background: #fff;
+}
+
+
+
+.hover:hover{
+    cursor: pointer;
+}
+
+
+.smhero_banner_wrap{
+    padding-bottom: 545px;
+}
+
+
+.hideSearch {
+    position: fixed;
+    
+    top: 0;
+    z-index: 9999;
+    background: #fff;
+    height: 100%;
+     /*포지션 최상단에 고정 z-index로 젤위에 레이아웃두고 높이100주고 배경 하얀색  */
+   
+}
+
+.hideSearch::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+}
+
+.viewCom {
+    display: block !important;
+    opacity: 1 !important;
+    /* important는 제일 먼저 이게 적용되도록 한다. */
+}
+.hideCom {
+    display: none !important;
+}
+
+
+.opty{
+    opacity: 1;
+    visibility: visible;    
+}
+
+.mndtl_opt_bar.on {
+    z-index: 300 !important;
+}
+
+.mndtl_opt_bar .mndtl_opt_close .mndtl_btn_opt_close:before{
+    cursor: pointer;
+}
+
+
+
+/* 유효성검사 에러 메시지 */
+.invalid-input{
+    font-weight: bold;
+    font-size: 13px;
+    color: #ff8000;
+}
+.fixed{
+    position: fixed;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    background: #fff;
+    width: 90%!important;
+    height: 100vh;
+}
+.modalBg{
+    position: fixed;
+    left: 0;top: 0;
+    right: 0;bottom: 0;
+    z-index: 9000;
+    background: #000;
+    opacity: 0.6;
+    width: 100%!important;
+    height: 100vh; 
+}
+
+.cmem_certi_item:hover{
+    cursor: pointer;
+}
+
+
+.addressChange,
+.addressAdd{
+    width: 100%;
+    height: 100vh;
+    position: fixed !important;
+    top: 0 !important;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.w90{
+    width: 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fixed2{
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+}
+.fixed3{
+    top:50px !important;
+}
+.topPlus{
+    margin-top: 80px;
+}
+
+.idCheck{
+    
+    background: #666;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 15px;
+    margin-left: 20px;
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
+
+.flexBox{
+    display: flex;
+}
+.dd{
+    display: block !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.modal-open-btn{
+    cursor: pointer;
+}
+.whb{
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.bk{
+    background: none !important;
+}
+.zIndex{
+    overflow: hidden !important;
+    overscroll-behavior-y: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 추가 */
+
+
+
+
+
+
+.cmhistory_delete{
+    display: table !important;
+}
+
+.cmhistory_unit_box .cmhistory_h_form{
+    display: block !important;
+}
+.cmgrid_brd_ranking .cmgrid_brd_wrap.open .cmgrid_brd_ranking_unit{
+    display: block !important;
+}

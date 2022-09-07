@@ -1,0 +1,114 @@
+[
+    {
+        "lv1Id" : 1,
+        "lv1imgpath" :  "'https://simg.ssgcdn.com/trans.ssg?src=/cmpt/banner/202007/2020072413342121681090850209_459.jpg&amp;w=150&amp;h=150&amp;edit=c&amp;t=83d1ec825c82c691c9b2d949b3d465803a13059b",
+        "lv1name" : "명품/잡화",
+        "categoryLv2List" : [
+            {
+                "id" : 1,
+                "lv2name":"상품 전체보기"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"해외명품"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"핸드백/지갑"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"시계/쥬얼리"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"모자/장갑/ACC"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"슈즈/운동화"
+                
+            }
+            
+        ]
+    },
+    {
+        "lv1Id" : 2,
+        "lv1imgpath" :  "'https://simg.ssgcdn.com/trans.ssg?src=/cmpt/banner/202007/2020072413343891419129134912_505.jpg&amp;w=150&amp;h=150&amp;edit=c&amp;t=de9828d64b1e587e1cc9bb4a5feedf5420255949",
+        "lv1name" : "명품화장품",
+        "categoryLv2List" : [
+            {
+                "id" : 1,
+                "lv2name":"상품 전체보기"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"스킨케어"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"메이크업"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"헤어/바디"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"향수"
+                
+            }
+            
+        ]
+    },
+    {
+        "lv1Id" : 2,
+        "lv1imgpath" :  "'https://simg.ssgcdn.com/trans.ssg?src=/cmpt/banner/202007/2020072411204623174933849493_865.jpg&amp;w=150&amp;h=150&amp;edit=c&amp;t=74bae9f4125fdb65be7be09d5c1012652133200f'",
+        "lv1name" : "패션",
+        "categoryLv2List" : [
+            {
+                "id" : 1,
+                "lv2name":"상품 전체보기"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"스킨케어"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"메이크업"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"헤어/바디"
+                
+            },
+            {
+                "id" : 1,
+                "lv2name":"향수"
+                
+            }
+            
+        ]
+    }
+    
+    
+
+    
+    
+    
+    
+]
+

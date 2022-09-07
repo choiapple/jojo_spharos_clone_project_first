@@ -1,0 +1,20 @@
+
+.cmnoti_push{
+    min-width: 16px;
+    max-height: 16px;
+    line-height: 17px;
+    padding: 0 4px;
+    text-align: center;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ff5b59;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}

@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "imgUrl": "http://sitem.ssgcdn.com/50/39/81/item/1000038813950_i1_500.jpg",
+        "ssgName":"신세계몰",
+        "brand": "쓱-신",
+        "title":"[바로배송][쓱신]해신수산 완도활전복 특大 최고급선물세트 14마리 1,560g_마리당110g내외/부직포포장_국내산(양식)",
+        "oldPrice": "",
+        "discount_rate": "",
+        "newPrice": 109900,
+        "reviewScore": 4.9,
+        "reviewNUm" : 111,
+        "배송비" : "",
+        "19금":true
+    },
+
+
+
+    {
+        "id": 2,
+        "imgUrl": "http://sitem.ssgcdn.com/50/39/81/item/1000038813950_i1_500.jpg",
+        "ssgName":"2",
+        "brand": "쓱-신",
+        "title":"[바로배송][쓱신]해신수산 완도활전복 특大 최고급선물세트 14마리 1,560g_마리당110g내외/부직포포장_국내산(양식)",
+        "isDiscount": false,
+        "oldPrice": "",
+        "discount_rate": "",
+        "newPrice": 109900,
+        "reviewScore": 4.9,
+        "reviewNUm" : 111,
+        "배송비" : 100,
+        "19금":true
+    },
+    {
+        "id": 3,
+        "imgUrl": "http://sitem.ssgcdn.com/50/39/81/item/1000038813950_i1_500.jpg",
+        "ssgName":"3",
+        "brand": "쓱-신",
+        "title":"[바로배송][쓱신]해신수산 완도활전복 특大 최고급선물세트 14마리 1,560g_마리당110g내외/부직포포장_국내산(양식)",
+        "isDiscount": false,
+        "oldPrice": "",
+        "discount_rate": "",
+        "newPrice": 109900,
+        "reviewScore": 4.9,
+        "reviewNUm" : 111,
+        "배송비" : 100,
+        "19금":true
+    }
+]
