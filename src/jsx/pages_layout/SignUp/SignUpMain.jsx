@@ -74,21 +74,26 @@ function SignUpMain({inputData}) {
           const [emailError, setEmailError] = useState(false);
 
           const onChangeUserId = (e) => {
-            const userIdRegex = /^[A-Za-z0-9+]{3,}$/;
-            if ((!e.target.value || (userIdRegex.test(e.target.value)))) {
-              setUserIdError(false);
-            } else setUserIdError(true);
+            const userIdRegex = /^[A-Za-z0-9]{3,}$/;
+            if ((!e.target.value || (userIdRegex.test(e.target.value)))) 
+              {
+                setUserIdError(false);
+              }else setUserIdError(true)
+             setUserId(e.target.value);
+            
             // 안에 값이 없거나 정규식이 맞으면 에러flase = 즉 에러안뜸
             // 그 외의 경우 에러 true = 즉 에러뜸
-            setUserId(e.target.value);
+          
             // 아이디값은 value값
           };
           const onChangePassword = (e) => {
             const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-            if ((!e.target.value || (passwordRegex.test(e.target.value)))) setPasswordError(false);
+            if ((!e.target.value || (passwordRegex.test(e.target.value)))) 
+            setPasswordError(false);
             else setPasswordError(true);
           
-            if (!confirmPassword || e.target.value === confirmPassword) setConfirmPasswordError(false);
+            if (!confirmPassword || e.target.value === confirmPassword) 
+            setConfirmPasswordError(false);
             else setConfirmPasswordError(true);
             setPassword(e.target.value);
           };
@@ -132,7 +137,10 @@ function SignUpMain({inputData}) {
       
       
           const validation = () => {
+            console.log(userIdError)
+       
             if (!userId) setUserIdError(true);
+            if (!userIdError) 
             if (!password) setPasswordError(true);
             if (!confirmPassword) setConfirmPasswordError(true);
             if (!userName) setUserNameError(true);
@@ -140,7 +148,7 @@ function SignUpMain({inputData}) {
             if (!phoneNum) setPhoneNumError(true);
             if (!email) setEmailError(true);
          
-            if (userId && password && confirmPassword && userName && email && userAddDetail && phoneNum && zonecode &&idCheck){
+            if ( !userIdError && userId && password && confirmPassword && userName && email && userAddDetail && phoneNum && zonecode && idCheck === '가입 가능' ){
               return true;
             }else{
               return false;
@@ -168,7 +176,7 @@ function SignUpMain({inputData}) {
           const onSubmit = (e) => {
             e.preventDefault();
 
-            if (validation() && idCheck === "가입 가능") {
+            if (validation()) {
               axios.post(`${Server.baseUrl}api/user/signup`, {
                   "userId": userId,
                   "password": password,
@@ -177,7 +185,6 @@ function SignUpMain({inputData}) {
                   "phone": inputData.phone,
                   "email": email,
                   "gender": inputData.gender,
-
                   "address": fullAdd,
                   "zipCode": zonecode
 

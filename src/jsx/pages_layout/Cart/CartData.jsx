@@ -135,14 +135,13 @@ function CartData({ userData, setUserData, toggle, setToggle}) {
                 </span>
               </div>
               <span className="mnodr_control_delete">
-                <a
-                  href=""
+                <span
                   className="df cartTracking"
                   name="btDelChekItemAll"
                   data-tracking-cd="00044_000000199_t00060"
                   data-tracking-value="품절상품삭제">
                   품절상품삭제
-                </a>
+                </span>
                 <a
                   href=""
                   className="sm cartTracking"

@@ -66,4 +66,4 @@
   
 　  
 ## [API definition](https://docs.google.com/spreadsheets/d/1hM8PR1Gooo6hjINPKSwMS9sOXrUBAVZxQLKrA-TetUg/edit#gid=2003183701)
-![image](https://user-images.githubusercontent.com/60650967/188569621-e5bf9585-63a0-45f5-80fa-195457097604.png)
+![image](https://user-images.githubusercontent.com/60650967/188804587-6cd12b47-af1f-4d00-bd6f-d86a8f5e4b6d.png)

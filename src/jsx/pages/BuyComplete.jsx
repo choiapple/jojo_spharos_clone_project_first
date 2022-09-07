@@ -169,9 +169,9 @@ function BuyComplete() {
 
 
                      <div className="mnodr_btn_group">
-                         <a href="http://m.ssg.com" className="mnodr_btn mnodr_btn_contionus_shopping ty_md">
+                         <Link to='/' className="mnodr_btn mnodr_btn_contionus_shopping ty_md">
                              <span className="mnodr_btn_content">계속 쇼핑하기</span>
-                         </a>
+                         </Link>
 
                          <a href="https://pay.ssg.com/m/myssg/orderDetail.ssg?orordNo=20220904C61B6B
                

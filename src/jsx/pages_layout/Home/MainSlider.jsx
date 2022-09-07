@@ -171,12 +171,12 @@ function MainSlider(props) {
                         data-advertkindcd="50"
                       >
                         <div className="cmitem_tt_adinfo ssg-tooltip-wrap">
-                          <a
-                            href="#"
+                          <span
+                          
                             className="cmitem_btn_tt_adinfo ssg-tooltip"
                           >
                             <span className="blind">광고 안내 툴팁</span>
-                          </a>
+                          </span>
                           <div className="cmitem_tt_adinfo_layer ssg-tooltip-layer">
                             검색어와 관련된 상품으로 입찰가순으로 전시됩니다.
                             <button
@@ -187,9 +187,9 @@ function MainSlider(props) {
                             </button>
                           </div>
                         </div>
-                        <a
+                        <span
                           className="smhero_bnlink"
-                          href=""
+                   
                           
                         >
                           <div className="smhero_thumb">
@@ -215,14 +215,13 @@ function MainSlider(props) {
                               <span className="csmhero_titsub_tx"></span>
                             </div>
                           </div>
-                        </a>
+                        </span>
                       </div>
                     </li>
                     <li>
                       <div className="smhero_bn gate_unit">
-                        <a
+                        <span
                           className="smhero_bnlink"
-                          href="https://event.ssg.com/m/eventDetail.ssg?nevntId=1000000001250"
                         >
                           <div className="smhero_thumb">
                             <img
@@ -247,14 +246,14 @@ function MainSlider(props) {
                               <span className="csmhero_titsub_tx"></span>
                             </div>
                           </div>
-                        </a>
+                        </span>
                       </div>
                     </li>
                     <li>
                       <div className="smhero_bn gate_unit">
-                        <a
+                        <span
                           className="smhero_bnlink"
-                          href="https://m-shinsegaemall.ssg.com/page/giftshop.ssg"
+                      
                         >
                           <div className="smhero_thumb">
                             <img
@@ -279,14 +278,14 @@ function MainSlider(props) {
                               <span className="csmhero_titsub_tx"></span>
                             </div>
                           </div>
-                        </a>
+                        </span>
                       </div>
                     </li>
                     <li>
                       <div className="smhero_bn gate_unit">
-                        <a
+                        <span
                           className="smhero_bnlink"
-                          href="https://event.ssg.com/m/eventDetail.ssg?nevntId=1000000001307"
+                      
                         >
                           <div className="smhero_thumb">
                             <img
@@ -311,7 +310,7 @@ function MainSlider(props) {
                               <span className="csmhero_titsub_tx"></span>
                             </div>
                           </div>
-                        </a>
+                        </span>
                       </div>
                     </li>
                   </ul>
