@@ -9,9 +9,11 @@ import HistoryCtrl from '../common/widget/recentsearch/HistoryCtrl';
 import Swal from 'sweetalert2';
 import Server from '../../server/server';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import LoginContext from '../../context/login.context';
 
 function RecentSearch() {
-
+    const auth = useContext(LoginContext);
 
     const swal = ()=>{
         Swal.fire({
@@ -35,7 +37,8 @@ function RecentSearch() {
     const [deleteMsg , setDeleteMsg] = useState();
 
     useEffect(() => {
-        axios.get(`${Server.baseUrl}api/recently/list`, {
+        if(auth.token){
+            axios.get(`${Server.baseUrl}api/recently/list`, {
                 headers: {
                     "Authorization": token
                 }
@@ -43,7 +46,8 @@ function RecentSearch() {
             .then(Response => {
                 setRecentPdt(Response.data)
             })
-    }, [deleteMsg])
+        }
+    }, [auth, deleteMsg])
 
     
     const deleteRecent = () => {
